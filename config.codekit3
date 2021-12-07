@@ -17,6 +17,17 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/common-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/common-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/common.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -28,6 +39,17 @@
       "oAP" : "\/common-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/common.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/common-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/common.scss" : {
       "aP" : 1,
@@ -813,7 +835,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {

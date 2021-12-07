@@ -1,0 +1,1 @@
+var elNav=document.querySelector("#nav");window.addEventListener("scroll",(function(){window.scrollY>=1?elNav.classList.add("style-scroll"):elNav.classList.remove("style-scroll")}));
