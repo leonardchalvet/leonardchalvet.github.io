@@ -1,0 +1,58 @@
+body{
+    height: 100vh;
+    position: relative;
+    background-color: #3B61F4;
+    
+}
+
+.background-line{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    .backgroundLine-bg{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2560px;
+        height: 700px;
+        position: relative;
+        .container-col{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .col{
+                height: 100%;
+                width: 1px;
+                background-color: rgba(255, 255, 255, 0.2);
+                position: relative;
+                overflow: hidden;                
+            }
+        }
+        .container-row{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .row{
+                height: 1px;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
+@import 'sectioncontact-anim.prod.scss';
+

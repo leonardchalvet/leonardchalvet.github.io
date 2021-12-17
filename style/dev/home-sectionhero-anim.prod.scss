@@ -1,0 +1,129 @@
+.home-bgline-row{
+  @for $i from 1 to 25 {
+    &:nth-child(#{$i}) { 
+        &:before{
+            animation-delay: (-4s * random(20));
+            animation-duration:(((random(25) * 0.3) + 4s));
+        }
+        
+    }
+  }
+  &:nth-child(odd){
+      &:before{
+          animation-iteration-count: infinite;
+      }
+  }
+  &:nth-child(4n+1){
+      &:before{
+          animation-iteration-count: 0;
+      }
+  }
+  &:before{
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 10%;
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+      transform: translateX(-100%);
+      opacity: 0;
+      animation-name: bghero;
+      
+      animation-timing-function: linear;
+  }
+
+  @keyframes bghero {
+      from {
+          transform: translateX(-100%);
+      }
+      to {
+          transform: translateX(1000%);
+      }
+  }
+}
+.home-bgline-col,
+.home-bgline-row{  
+    transition: all 5s cubic-bezier(0.000, 0.975, 0.265, 1.000);
+}
+.home-bgline-col{
+    transform-origin: bottom;
+    @for $i from 1 to 25 {
+        &:nth-child(#{$i}) { 
+            transition-delay: (0.15s * $i);
+        }
+    }
+    background-color: rgba(255, 255, 255, 0.1);
+    //transform: scaleY(0);
+}
+.home-bgline-row{
+    transform-origin: left;
+    @for $i from 1 to 25 {
+        &:nth-child(#{$i}) { 
+            transition-delay: (0.15s *  (25 - $i));
+        }
+    }
+    background-color: rgba(255, 255, 255, 0.1);
+    //transform: scaleX(0);
+}
+.home-bgline-cross{
+    &:nth-child(1){
+        right: calc(-9.5px + ((2560px / 22) * 13));
+        top: calc(-9.5px + ((2560px / 22) * 8));
+    }
+    &:nth-child(2){
+        right: calc(-9.5px + ((2560px / 22) * 10));
+        top: calc(-9.5px + ((2560px / 22) * 11));
+        
+    }
+    &:nth-child(3){
+        right: calc(-9.5px + ((2560px / 22) * 7));
+        top: calc(-9.5px + ((2560px / 22) * 14));
+        
+    }
+    &:nth-child(4){
+        right: calc(-9.5px + ((2560px / 22) * 11));
+        top: calc(-9.5px + ((2560px / 22) * 6));
+    }
+    &:nth-child(5){
+        right: calc(-9.5px + ((2560px / 22) * 9));
+        top: calc(-9.5px + ((2560px / 22) * 4));
+    }
+    &:nth-child(6){
+        right: calc(-9.5px + ((2560px / 22) * 6));
+        top: calc(-9.5px + ((2560px / 22) * 7));
+    }
+    &:nth-child(7){
+        right: calc(-9.5px + ((2560px / 22) * 3));
+        top: calc(-9.5px + ((2560px / 22) * 10));
+    }
+    
+    transition: all 2s cubic-bezier(0.255, 0.005, 0.035, 1.005);
+    transform: rotate(90deg) scale(0);
+    
+    @for $i from 1 to 25 {
+        &:nth-child(#{$i}) { 
+            transition-delay: (0s + (0.07s * $i));
+            
+        }
+    }
+}
+.home-bgline{
+  &.style-ready{
+    
+    .home-bgline-col{
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scaleY(1) translateZ(0px);
+    }
+    .home-bgline-row{
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scaleX(1) translateZ(0px);
+        &:before{
+            opacity: 1;
+        }
+    }
+    .home-bgline-cross{
+        transform: rotate(0deg) scale(1);
+    }
+}
+}

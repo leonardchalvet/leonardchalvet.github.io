@@ -1,0 +1,59 @@
+.container-col{
+  .col{
+      
+      @for $i from 1 to 56 {
+          &:nth-child(#{$i}) { 
+              &:before{
+                  animation-delay: (-4s * random(56));
+                  animation-duration:(((random(56) * 0.3) + 4s));
+              }
+              
+          }
+      }
+      &:nth-child(odd){
+          &:before{
+              animation-iteration-count: infinite;
+          }
+      }
+      &:nth-child(3n+1){
+        &:before{
+            animation-iteration-count: 0;
+        }
+    }
+      &:nth-child(4n+1){
+          &:before{
+              animation-iteration-count: 0;
+          }
+      }
+      &:nth-child(5n+1){
+        &:before{
+            animation-iteration-count: 0;
+        }
+    }
+      &:before{
+          content: '';
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          height: 10%;
+          width: 100%;
+          background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+          transform: translateY(-100%);
+          
+          animation-name: wame;
+          
+          animation-timing-function: linear;
+      }
+
+      @keyframes wame {
+          from {
+              transform: translateY(-100%);
+          }
+          to {
+              transform: translateY(1000%);
+          }
+      }
+
+      
+  }
+}

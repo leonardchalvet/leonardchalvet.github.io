@@ -1,0 +1,25 @@
+body {
+  background-color: red !important;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-cross {
+  cursor: pointer;
+}
+
+header .header-cross .header-crossline {
+  transition: all 0.25s ease;
+}
+header .header-container {
+  transition: transform 0.5s ease;
+}
+header.style-open .header-cross .header-crossline:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+header.style-open .header-cross .header-crossline:nth-child(2) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+header.style-open .header-container {
+  transform: translateY(0px);
+}

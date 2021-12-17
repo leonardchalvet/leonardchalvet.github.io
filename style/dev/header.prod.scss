@@ -1,0 +1,25 @@
+header{
+  .header-cross{
+    .header-crossline{
+      transition: all 0.25s ease;
+    }
+  }
+  .header-container{
+    transition: transform 0.5s ease;
+  }
+  &.style-open{
+    .header-cross{
+      .header-crossline{
+        &:nth-child(1){
+          transform: translateY(4px) rotate(45deg);
+        }
+        &:nth-child(2){
+          transform: translateY(-4px) rotate(-45deg);
+        }
+      }
+    }
+    .header-container{
+      transform: translateY(0px);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body{
+  background-color: red !important;
+  height: 100vh;
+  width: 100%;
+}
+
+.header-cross{
+  cursor: pointer;
+}
+
+// SECTION CONTACT ANIM
+@import 'header.prod.scss';

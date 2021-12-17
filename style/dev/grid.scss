@@ -1,0 +1,21 @@
+$breakPoint_tablet: 1250px;
+$breakPoint_mobile: 700px;
+
+$grid_tablet: 100%;
+$grid_mobile: 100%;
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+  .wrapper{
+    width: $grid_tablet !important;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+}
+@media screen and (max-width: $breakPoint_mobile){
+  .wrapper{
+    width: $grid_mobile !important;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
