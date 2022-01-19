@@ -20,3 +20,18 @@ elCross.addEventListener('click', function (event) {
     elNav.classList.add('style-open');
    }
 });
+
+
+
+let elDropdown = document.querySelectorAll('.header-li');
+elDropdown.forEach(function (el) {
+  el.addEventListener('click', function (event) {
+    if(el.classList.contains('style-open')){
+      elDropdown.forEach(function (el) {
+        el.classList.remove('style-open');
+      });
+    } else {
+      el.classList.add('style-open');
+    }
+  })
+});

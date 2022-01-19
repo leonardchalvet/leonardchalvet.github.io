@@ -37,3 +37,21 @@ header.style-open .header-container {
     color: rgba(255, 255, 255, 0.7);
   }
 }
+
+.header-dropdownarrow {
+  transition: transform 0.25s ease;
+}
+
+.header-li.style-open .header-dropdownarrow {
+  transform: rotate(180deg);
+}
+.header-li.style-open .header-dropdown {
+  display: block;
+}
+
+.header-dropdownlistel {
+  transition: opacity 0.25s ease;
+}
+.header-dropdownlistel:hover {
+  opacity: 0.6;
+}

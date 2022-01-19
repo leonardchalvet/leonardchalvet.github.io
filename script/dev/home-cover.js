@@ -2,12 +2,12 @@
 // @codekit-prepend '../../assets/lottie-v1.js';
 
 var elHomeCover = document.querySelector('.home-bgline');
-//var elHomeFeatures = document.querySelector('.home-sectionfeatures');
+var elHomeFeatures = document.querySelector('.home-sectionfeatures');
 
 if(elHomeCover){
     window.addEventListener('load', function() {
         elHomeCover.classList.add('style-ready');
-        //elHomeFeatures.classList.add('style-ready');
+        elHomeFeatures.classList.add('style-ready');
     });
     var params = {
         container: document.getElementById('lottie'),

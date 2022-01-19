@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!-- Last Published: Wed Jan 19 2022 16:17:24 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="numeral-7adc21.webflow.io" data-wf-page="61ae3c50388fc23e0557b8c0" data-wf-site="61ae3c50388fc29df557b8be" lang="en" class="w-mod-js wf-inter-n4-active wf-inter-n7-active wf-active">
+
+<head>
+    <style>
+    .wf-force-outline-none[tabindex="-1"]:focus {
+        outline: none;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title>Numeral, payment operations platform for tech companies</title>
+    <meta content="Numeral enables financial institutions, tech companies, and corporates to scale bank integrations and payment operations with a single API." name="description">
+    <meta content="Numeral, payment operations platform for tech companies" property="og:title">
+    <meta content="Numeral enables financial institutions, tech companies, and corporates to scale bank integrations and payment operations with a single API." property="og:description">
+    <meta content="Numeral, payment operations platform for tech companies" property="twitter:title">
+    <meta content="Numeral enables financial institutions, tech companies, and corporates to scale bank integrations and payment operations with a single API." property="twitter:description">
+    <meta property="og:type" content="website">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://assets.website-files.com/61ae3c50388fc29df557b8be/css/numeral-7adc21.99e163467.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:regular,700" media="all">
+    <script type="text/javascript">
+    WebFont.load({
+        google: {
+            families: ["Inter:regular,700"]
+        }
+    });
+    </script>
+    <!--[if lt IE 9]>
+													<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
+													<![endif]-->
+    <script type="text/javascript">
+    ! function(o, c) {
+        var n = c.documentElement,
+            t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+    }(window, document);
+    </script>
+    <link href="https://assets.website-files.com/61ae3c50388fc29df557b8be/61c0b0d7d2d92d01ceabaae9_favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://assets.website-files.com/61ae3c50388fc29df557b8be/61c0b0dd943587559ba96a0b_android-chrome-256x256.png" rel="apple-touch-icon">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QTR50FVZE3"></script>
+    <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-QTR50FVZE3', {
+        'anonymize_ip': false
+    });
+    </script>
+    <link rel="stylesheet" href="style/prod/common.css">
+    <link rel="stylesheet" href="https://embed.typeform.com/next/css/popup.css">
+</head>
+
+<body>
+    <a href="https://blog.numeral.io/announcing-numeral-and-our-13-million-first-round-of-funding-463d4db0678b" target="_blank" class="common-banner color-blue-8-bg w-inline-block">
+        <div class="common-banner-text caps color-primary-2">🔥 We just raised €13 million!&nbsp;Learn more.</div>
+    </a>
+    <header id="nav" class="sticky-nav sticky-nav-home">
+        <div class="wrapper header-wrapper">
+            <a href="#" class="w-inline-block">
+                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af7b812edd42dbfddf1a36_Logo.svg" loading="lazy" alt="" class="header-logo">
+            </a>
+            <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af7b812edd42dbfddf1a36_Logo.svg" loading="lazy" alt="" class="header-logo-mobile">
+            <div class="header-cross">
+                <div class="header-crossline"></div>
+                <div class="header-crossline"></div>
+            </div>
+            <div class="header-container">
+                <ul role="list" class="list">
+                    <li class="header-li">
+                        <div class="header-link">
+                            <p class="paragraph-small color-primary-3-opacity">Platform</p>
+                            <div class="header-dropdownarrow">
+                                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61e8374ed46bc064e9a28f98_arrow.svg" loading="lazy" alt="" class="header-dropdownarrowwhite">
+                            </div>
+                        </div>
+                        <div class="header-dropdown">
+                            <ul role="list" class="header-dropdownlist">
+                                <li class="header-dropdownlistel">
+                                    <a href="#section-automation" class="header-dropdownlistlink w-inline-block">
+                                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61e832be87db1d78cabb38b9_icn-1.svg" loading="lazy" alt="" class="header-dropdownimg">
+                                        <div class="header-dropdowntext">
+                                            <h3 class="header-dropdowntitle">Automation</h3>
+                                            <p class="paragraph-tiny color-greyscale-2">lorem ipsum dolor sit</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-dropdownlistel">
+                                    <a href="#section-coverage" class="header-dropdownlistlink w-inline-block">
+                                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61e832bdfd8a6f43d408b8ce_icn-2.svg" loading="lazy" alt="" class="header-dropdownimg">
+                                        <div class="header-dropdowntext">
+                                            <h3 class="header-dropdowntitle">Coverage</h3>
+                                            <p class="paragraph-tiny color-greyscale-2">lorem ipsum dolor sit</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-dropdownlistel">
+                                    <a href="#section-developers" class="header-dropdownlistlink w-inline-block">
+                                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61e832bd952b23037692f9dd_icn-3.svg" loading="lazy" alt="" class="header-dropdownimg">
+                                        <div class="header-dropdowntext">
+                                            <h3 class="header-dropdowntitle">Developers</h3>
+                                            <p class="paragraph-tiny color-greyscale-2">lorem ipsum dolor sit</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-li">
+                        <a href="http://docs.numeral.io" class="header-link w-inline-block">
+                            <p class="paragraph-small color-primary-3-opacity">
+                                <span>API&nbsp;Docs</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a href="http://docs.numeral.io" class="header-link w-inline-block">
+                            <p class="paragraph-small color-primary-3-opacity">
+                                <span>API&nbsp;Docs</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a href="/company" class="header-link w-inline-block">
+                            <p class="paragraph-small color-primary-3-opacity">
+                                <span>Company</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="header-li">
+                        <a href="http://blog.numeral.io" class="header-link w-inline-block">
+                            <p class="paragraph-small color-primary-3-opacity">
+                                <span>Blog</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-cta w-embed w-iframe">
+                    <button data-tf-popup="rlRywASv" data-tf-hide-headers="" data-tf-iframe-props="title=Numeral contact form" class="button-small color-blue-2-bg" data-tf-loaded="true">
+                        <div class="link-small color-primary-3">Talk to an expert</div>
+                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af4e2c2205c86ff8ede101_Arrow.svg" loading="lazy" alt="" class="button-arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="home-sectionhero color-primary-1-bg wf-section">
+        <div class="home-sectionhero_background"></div>
+        <div class="wrapper home-sectionhero-wrapper">
+            <div class="home-sectionhero-text">
+                <h1 class="h1 color-primary-3 home-sectionhero-h1">Payment operations
+                    <br>
+                    <span class="text-span-2">for tech companies</span>
+                </h1>
+                <p class="paragraph-big color-primary-3 home-sectionhero-paragraph">
+                    <span class="text-span-4">Automate payments across banks with a</span>
+                    <span>single API</span>
+                </p>
+                <div class="home-sectionhero-containerbtn">
+                    <div class="w-embed w-iframe">
+                        <button data-tf-popup="rlRywASv" data-tf-hide-headers="" data-tf-iframe-props="title=Numeral contact form" class="button-big color-blue-2-bg" data-tf-loaded="true">
+                            <div class="link-normal color-primary-3">Talk to an expert</div>
+                            <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af4e2c2205c86ff8ede101_Arrow.svg" loading="lazy" alt="" class="button-arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="home-sectionhero-containerlogo">
+                <p class="paragraph-small color-primary-3">
+                    <span class="text-span-5">They trust us</span>
+                </p>
+                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af5808f48a28245cf2abe6_logo-spendesk.svg" loading="lazy" alt="" class="home-sectionhero-logo">
+                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af5807c1cf8fb12ac72498_logo-swile.svg" loading="lazy" alt="" class="home-sectionhero-logo home-sectionhero-logo1">
+            </div>
+        </div>
+        <div class="home-bgline style-ready">
+            <div class="home-bgline-bg">
+                <div class="home-bgline-container">
+                    <div class="home-bgline-containercol">
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                        <div class="home-bgline-col"></div>
+                    </div>
+                    <div class="home-bgline-containerrow">
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                        <div class="home-bgline-row"></div>
+                    </div>
+                    <div class="home-bgline-containercross">
+                        <div class="home-bgline-cross">
+                            <div class="home-bgline-line-1 color-blue-5-bg"></div>
+                            <div class="home-bgline-line-2 color-blue-5-bg"></div>
+                        </div>
+                        <div class="home-bgline-cross">
+                            <div class="home-bgline-line-1 color-blue-5-bg"></div>
+                            <div class="home-bgline-line-2 color-blue-5-bg"></div>
+                        </div>
+                        <div class="home-bgline-cross">
+                            <div class="home-bgline-line-1 color-blue-5-bg"></div>
+                            <div class="home-bgline-line-2 color-blue-5-bg"></div>
+                        </div>
+                        <div class="home-bgline-cross">
+                            <div class="home-bgline-line-1 color-blue-5-bg"></div>
+                            <div class="home-bgline-line-2 color-blue-5-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lottie" class="div-block-3">
+                    <canvas width="1504" height="1200" style="width: 100%; height: 100%; transform-origin: 0px 0px 0px;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-sectionfeatures wf-section">
+        <div class="wrapper home-sectionfeatures-wrapper">
+            <div id="section-coverage" class="home-sectionfeatures-feature">
+                <div class="home-sectionfeatures-text">
+                    <div class="home-sectionfeatures-head">
+                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61bc8fcd2fa12736f2b5c131_icn-1.svg" loading="lazy" alt="" class="home-sectionfeatures-icn">
+                        <div class="caps color-primary-1">COVERAGE</div>
+                    </div>
+                    <h2 class="h2 color-primary-2 home-sectionfeatures-h2">We develop bank integrations so you don't have to</h2>
+                    <p class="paragraph-big color-greyscale-2">Integrate a single API for all your banks and payment methods. We connect you to your banks and handle all the complexity for you.</p>
+                    <div class="container-btn home-sectionfeatures-feature-containerbtn">
+                        <a href="#" class="button-small color-blue-8-bg w-inline-block">
+                            <div class="link-small color-primary-1">Explore coverage</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-sectionfeatures-illu">
+                    <div class="home-sectionfeatures_video w-embed w-iframe">
+                        <iframe class="embedly-embed home-sectionfeatures_video" src="https://player.vimeo.com/video/657468100?api=1&amp;background=1&amp;autoplay=1&amp;loop=1&amp;muted=1" scrolling="no" title="Vimeo embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="section-automation" class="home-sectionfeatures-feature">
+                <div class="home-sectionfeatures-text">
+                    <div class="home-sectionfeatures-head">
+                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61bc8fcd092b20f7ad8db05f_icn-2.svg" loading="lazy" alt="" class="home-sectionfeatures-icn">
+                        <div class="caps color-primary-1">AUTOMATION</div>
+                    </div>
+                    <h2 class="h2 color-primary-2 home-sectionfeatures-h2">Build custom end-to-end payment workflows</h2>
+                    <p class="paragraph-big color-greyscale-2">Automate payments from initiation to approval to reconciliation. Receive real-time notifications as payments are processed.</p>
+                    <div class="container-btn home-sectionfeatures-feature-containerbtn">
+                        <a href="#" class="button-small color-blue-8-bg w-inline-block">
+                            <div class="link-small color-primary-1">Explore automation</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-sectionfeatures-illu">
+                    <div class="home-sectionfeatures_video w-embed w-iframe">
+                        <iframe class="embedly-embed home-sectionfeatures_video" src="https://player.vimeo.com/video/657829202?api=1&amp;background=1&amp;autoplay=1&amp;loop=1&amp;muted=1" scrolling="no" title="Vimeo embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="section-developers" class="home-sectionfeatures-feature">
+                <div class="home-sectionfeatures-text">
+                    <div class="home-sectionfeatures-head">
+                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61bc8fcdc4f207fe26cb2b6b_icn-3.svg" loading="lazy" alt="" class="home-sectionfeatures-icn">
+                        <div class="caps color-primary-1">DEVELOPERS</div>
+                    </div>
+                    <h2 class="h2 color-primary-2 home-sectionfeatures-h2">A powerful API and webhooks developers will love</h2>
+                    <p class="paragraph-big color-greyscale-2">Integrate our API and webhooks into your own product and tools. Test in sandbox and launch in production in days.</p>
+                    <div class="container-btn home-sectionfeatures-feature-containerbtn">
+                        <a href="#" class="button-small color-blue-8-bg w-inline-block">
+                            <div class="link-small color-primary-1">Explore platform</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-sectionfeatures-illu">
+                    <div class="home-sectionfeatures_video w-embed w-iframe">
+                        <iframe class="embedly-embed home-sectionfeatures_video" src="https://player.vimeo.com/video/657430573?api=1&amp;background=1&amp;autoplay=1&amp;loop=1&amp;muted=1" scrolling="no" title="Vimeo embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-sectionsecurity color-blue-2-bg wf-section">
+        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61bcb0e7de2514f5aace997c_background.svg" loading="lazy" alt="" class="home-sectionsecurity-background">
+        <div class="wrapper _w-8 home-sectionsecurity_wrapper">
+            <div class="home-sectionsecurity-head">
+                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af65e976a49a946129b3b7_icn.svg" loading="lazy" alt="" class="home-sectionsecurity-icn">
+                <div class="caps color-primary-3">SECURITY</div>
+            </div>
+            <div class="home-sectionsecurity-text">
+                <h2 class="h2 color-primary-3 home-sectionsecurity-h2">Enjoy entreprise-grade security</h2>
+                <p class="paragraph-big color-blue-8">Numeral is built for the most demanding tech companies, with best-in-class security,
+                    <span class="text-span-8">GDPR compliance, EU-located servers, and 99.9% availability.</span>
+                </p>
+                <div class="home-sectionsecurity-containerel">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bb82d0331673fecf44ad_illu-3.svg" loading="lazy" alt="" class="home-sectionsecurity-el">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af6371c4aa134fb6cc453e_illu-1.svg" loading="lazy" alt="" class="home-sectionsecurity-el">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af6371de17f5c0375aa1fd_illu-2.svg" loading="lazy" alt="" class="home-sectionsecurity-el">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-sectionlogo wf-section">
+        <div class="wrapper">
+            <div class="home-sectionlogo-containerel">
+                <div class="home-sectionlogo-el">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61c5c5157e0aeb2cfa52bb6c_4f6f1fc524db7232412932819568d868.svg" loading="lazy" alt="" class="home-sectionlogo-elimg">
+                </div>
+                <div class="home-sectionlogo-el">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af68abb4fd6cdda8d1a4ba_logo-lesechos.svg" loading="lazy" alt="" class="home-sectionlogo-elimg">
+                </div>
+                <div class="home-sectionlogo-el">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61c5c51446befc82448a4078_logo-insider.svg" loading="lazy" alt="" class="home-sectionlogo-elimg">
+                </div>
+                <div class="home-sectionlogo-el">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61c5c514ff51f00dd25dadce_237897935_5008190475864852_4501726755369398177_n.png" loading="lazy" sizes="(max-width: 479px) 47px, 58px" srcset="https://assets.website-files.com/61ae3c50388fc29df557b8be/61c5c514ff51f00dd25dadce_237897935_5008190475864852_4501726755369398177_n-p-500.png 500w, https://assets.website-files.com/61ae3c50388fc29df557b8be/61c5c514ff51f00dd25dadce_237897935_5008190475864852_4501726755369398177_n-p-800.png 800w, https://assets.website-files.com/61ae3c50388fc29df557b8be/61c5c514ff51f00dd25dadce_237897935_5008190475864852_4501726755369398177_n.png 937w" alt="" class="home-sectionlogo-elimg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-sectionquote wf-section">
+        <div class="wrapper home-sectionquote-wrapper">
+            <h2 class="h2 color-primary-2 home-sectionquote-h2">Leading tech companies trust us</h2>
+            <div class="home-sectionquote-quote">
+                <blockquote class="textquote color-greyscale-1">“Managing bank integrations at scale is critical to our ability to grow Spendesk. Numeral is answering that exact need, with a strong focus on security and reliability as well as an impressive product development pace.”</blockquote>
+                <div class="home-sectionquote-infos">
+                    <div class="home-sectionquote-author">
+                        <div class="link-small color-primary-2">Axel Cateland</div>
+                        <div class="paragraph-tiny color-primary-2">Head of Banking</div>
+                    </div>
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af6d800d614db1df2e0caf_logo-spendesk.svg" loading="lazy" alt="" class="home-sectionquote-logo">
+                </div>
+            </div>
+            <div class="home-sectionquote-quote">
+                <blockquote class="textquote color-greyscale-1">“Numeral is what every PM&nbsp;in charge of payments is looking for: an easy way to tap into banks' file transfer capabilities through APIs. Similar to what Stripe, Adyen, and ProcessOut did for card acquiring, Numeral gets bank transfers into the modern era.”</blockquote>
+                <div class="home-sectionquote-infos">
+                    <div class="home-sectionquote-author">
+                        <div class="link-small color-primary-2">Quentin&nbsp;Vigneau</div>
+                        <div class="paragraph-tiny color-primary-2">Head of Payments</div>
+                    </div>
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af6d8066d4ee193ffe0a1c_logo-swile.svg" loading="lazy" alt="" class="home-sectionquote-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-sectioncontact color-primary-1-bg wf-section">
+        <div class="wrapper home-sectioncontact-wrapper">
+            <div class="home-sectioncontact-container">
+                <h2 class="h1 color-primary-3">Payment operations
+                    <br>
+                    <span class="text-span">for tech companies</span>
+                </h2>
+            </div>
+            <div class="container-btn home-sectioncontact-containerbtn">
+                <div class="w-embed w-iframe">
+                    <button data-tf-popup="rlRywASv" data-tf-hide-headers="" data-tf-iframe-props="title=Numeral contact form" class="button-big color-blue-2-bg" data-tf-loaded="true">
+                        <div class="link-normal color-primary-3">Talk to an expert</div>
+                        <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af4e2c2205c86ff8ede101_Arrow.svg" loading="lazy" alt="" class="button-arrow">
+                    </button>
+                </div>
+            </div>
+            <div class="home-sectioncontact_containerlogo">
+                <p class="paragraph-small color-primary-3">
+                    <span class="text-span-6">They trust us</span>
+                </p>
+                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af5808f48a28245cf2abe6_logo-spendesk.svg" loading="lazy" alt="" class="home-sectioncontact-logo">
+                <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61af5807c1cf8fb12ac72498_logo-swile.svg" loading="lazy" alt="" class="home-sectioncontact-logo home-sectioncontact-logo1">
+            </div>
+        </div>
+        <div class="background-line">
+            <div class="backgroundline-bg">
+                <div class="container-col">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="container-row">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer color-blue-1-bg wf-section">
+        <div class="wrapper footerv2_wrapper">
+            <div class="footer-flex-container">
+                <a href="#" class="footer-logo-link">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bc28102225abe056af1b_logo-light.svg" alt="" class="footer-image">
+                </a>
+                <div class="footer-ul">
+                    <h4 class="h4 color-primary-3">Features</h4>
+                    <ul role="list" class="footer-list w-list-unstyled">
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-ul">
+                    <h4 class="h4 color-primary-3">About</h4>
+                    <ul role="list" class="footer-list w-list-unstyled">
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Text Link</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-ul">
+                    <h4 class="h4 color-primary-3">Social</h4>
+                    <ul role="list" class="footer-list w-list-unstyled">
+                        <li class="footer-li">
+                            <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bcc7d1d60f3adec75e77_Linkedin.svg" loading="lazy" alt="" class="footer-li_icn">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Linkedin</a>
+                        </li>
+                        <li class="footer-li">
+                            <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bcc8b9602e7949ead48f_Twiiter.svg" loading="lazy" alt="" class="footer-li_icn">
+                            <a href="#" class="paragraph-small color-primary-3 footer-listlink">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div-block-2">
+                <div class="paragraph-tiny color-primary-3">Copyright © 2021 Numeral. All rights reserved.</div>
+            </div>
+        </div>
+        <div class="wrapper footerv1_wrapper">
+            <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bc28102225abe056af1b_logo-light.svg" loading="lazy" alt="" class="image-4">
+            <div class="div-block-7">
+                <ul role="list" class="list-2">
+                    <li class="list-item">
+                        <a href="/" aria-current="page" class="link-block w-inline-block w--current">
+                            <div class="paragraph-big color-primary-3-opacity">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://docs.numeral.io" class="link-block w-inline-block">
+                            <div class="paragraph-big color-primary-3-opacity">API&nbsp;Docs</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/company" class="link-block w-inline-block">
+                            <div class="paragraph-big color-primary-3-opacity">Company</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.numeral.io" class="link-block w-inline-block">
+                            <div class="paragraph-big color-primary-3-opacity">Blog</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://jobs.numeral.io" class="link-block w-inline-block">
+                            <div class="paragraph-big color-primary-3-opacity">We Are Hiring 👋</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/legal" class="link-block w-inline-block">
+                            <div class="paragraph-big color-primary-3-opacity">Legal</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="div-block-5">
+                <a href="https://twitter.com/joinnumeral" class="div-block-4 w-inline-block">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bcc8b9602e7949ead48f_Twiiter.svg" loading="lazy" alt="" class="image-5">
+                    <div class="paragraph-small color-primary-3-opacity">Twitter</div>
+                </a>
+                <a href="https://www.linkedin.com/company/joinnumeral/" class="div-block-6 w-inline-block">
+                    <img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/61b9bcc7d1d60f3adec75e77_Linkedin.svg" loading="lazy" alt="" class="image-5">
+                    <div class="paragraph-small color-primary-3-opacity">LinkedIn</div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61ae3c50388fc29df557b8be" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://assets.website-files.com/61ae3c50388fc29df557b8be/js/numeral-7adc21.78abdf605.js" type="text/javascript"></script>
+    <!--[if lte IE 9]>
+																																																				<script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script>
+																																																				<![endif]-->
+    <script type="text/javascript" src="script/prod/common-min.js"></script>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+</body>
+
