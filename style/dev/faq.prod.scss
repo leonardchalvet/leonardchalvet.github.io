@@ -1,0 +1,38 @@
+.faq-sectionhero_tab{
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+    &:not(.style-active){
+        &:hover{
+            border-color: transparent;
+            box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.08);
+        }
+    }
+    
+    &.style-active{
+        border-color: #3B61F4;
+    }
+}
+
+.faq-sectionfaq_list{
+    display: none;
+    &.style-show{
+        display: block;
+    }
+}
+
+.faq-sectionfaq_crossline:nth-child(2){
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-sectionfaq_q {
+    p{
+        display: none;
+    }
+    &.style-open{
+        p{
+            display: block;
+        }
+        .faq-sectionfaq_crossline:nth-child(2){
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+    }
+}

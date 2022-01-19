@@ -1,0 +1,21 @@
+
+.contact-sectioncontact_elinput2{
+   
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    select:required:invalid {
+        color: darkgray;
+    }
+    
+    select::-ms-expand {
+        display: none;
+    }
+
+    textarea{
+        resize: none;
+    }
+}

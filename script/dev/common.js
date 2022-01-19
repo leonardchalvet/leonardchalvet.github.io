@@ -4,3 +4,6 @@
 
 /* HOME COVER */
 // @codekit-prepend 'home-cover.js';
+
+/* FAQ */
+// @codekit-prepend 'faq.js';

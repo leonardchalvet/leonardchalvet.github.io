@@ -14,12 +14,26 @@ header .header-cross .header-crossline {
 header .header-container {
   transition: transform 0.5s ease;
 }
+header.style-open .header-logo {
+  display: none;
+}
+header.style-open .header-logo-mobile {
+  display: block;
+}
 header.style-open .header-cross .header-crossline:nth-child(1) {
   transform: translateY(4px) rotate(45deg);
 }
 header.style-open .header-cross .header-crossline:nth-child(2) {
   transform: translateY(-4px) rotate(-45deg);
 }
+header.style-open .header-crossline.header-crosslineblack {
+  background-color: #FFF;
+}
 header.style-open .header-container {
   transform: translateY(0px);
+}
+@media screen and (max-width: 1250px) {
+  header .header-container ul li a .paragraph-small {
+    color: rgba(255, 255, 255, 0.7);
+  }
 }

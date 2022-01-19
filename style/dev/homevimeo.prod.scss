@@ -1,0 +1,12 @@
+.home-sectionfeatures{
+  .home-sectionfeatures_video{
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  &.style-ready{
+    .home-sectionfeatures_video{
+      opacity: 1;
+    }
+  }
+}

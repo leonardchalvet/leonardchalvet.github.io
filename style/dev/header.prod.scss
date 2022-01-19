@@ -8,6 +8,12 @@ header{
     transition: transform 0.5s ease;
   }
   &.style-open{
+    .header-logo{
+      display: none;
+    }
+    .header-logo-mobile{
+      display: block;
+    }
     .header-cross{
       .header-crossline{
         &:nth-child(1){
@@ -18,8 +24,25 @@ header{
         }
       }
     }
+    .header-crossline.header-crosslineblack{
+      background-color: #FFF;
+    }
     .header-container{
       transform: translateY(0px);
+    }
+  }
+
+  @media screen and (max-width: 1250px){
+    .header-container{
+      ul{
+        li{
+          a{
+            .paragraph-small{
+              color: hsla(0,0%,100%,.7);
+            }
+          }
+        }
+      }
     }
   }
 }

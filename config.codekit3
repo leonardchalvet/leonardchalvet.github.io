@@ -7,7 +7,7 @@
       "uuidString" : "7C23E0EC-FDA6-4C44-AF62-51B393913E0E"
     }
   ],
-  "creatorBuild" : "34264",
+  "creatorBuild" : "34335",
   "files" : {
     "\/.vscode\/sftp.json" : {
       "ft" : 524288,
@@ -118,12 +118,28 @@
       "oAP" : "\/common-button.html",
       "oF" : 0
     },
+    "\/contact.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/contact.html",
+      "oF" : 0
+    },
     "\/coverbg-animation.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/coverbg-animation.html",
+      "oF" : 0
+    },
+    "\/faq.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/faq.html",
       "oF" : 0
     },
     "\/header.html" : {
@@ -142,36 +158,6 @@
       "oAP" : "\/home-vimeo.html",
       "oF" : 0
     },
-    "\/icn-1.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/icn-1.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/icn-2.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/icn-2.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/icn-3.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/icn-3.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/script\/dev\/common.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -181,6 +167,17 @@
       "oAP" : "\/script\/prod\/common-min.js",
       "oF" : 2,
       "sC" : 0,
+      "tS" : 0
+    },
+    "\/script\/dev\/faq.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/script\/dev\/faq-min.js",
+      "oF" : 0,
+      "sC" : 3,
       "tS" : 0
     },
     "\/script\/dev\/header.js" : {
@@ -279,6 +276,48 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/style\/dev\/contact.prod.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/style\/dev\/contact.prod.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/style\/dev\/faq.prod.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style\/dev\/faq.prod-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/style\/dev\/faq.prod.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/style\/dev\/faq.prod.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/style\/dev\/grid.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -369,6 +408,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/style\/dev\/homevimeo.prod.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/style\/prod\/homevimeo.prod.css",
+      "oF" : 2,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/style\/dev\/reset.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -426,6 +480,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/style\/prod\/header.local.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style\/prod\/header.local-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/style\/prod\/home-sectionhero-anim.local.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -447,6 +513,18 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/style\/prod\/homevimeo.local-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/style\/prod\/homevimeo.prod.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style\/prod\/homevimeo.prod-min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -772,144 +850,6 @@
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
-    "coffeeLintFlags2" : {
-      "arrow_spacing" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camel_case_classes" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "colon_assignment_spacing" : {
-        "active" : 0,
-        "flagValue" : 1
-      },
-      "cyclomatic_complexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "duplicate_key" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "ensure_comprehensions" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "indentation" : {
-        "active" : 1,
-        "flagValue" : 2
-      },
-      "line_endings" : {
-        "active" : 0,
-        "flagValue" : 0
-      },
-      "max_line_length" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "missing_fat_arrows" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newlines_after_classes" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "no_backticks" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_debugger" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_empty_functions" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_empty_param_list" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_implicit_braces" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_implicit_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_interpolation_in_single_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_nested_string_interpolation" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_private_function_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_stand_alone_at" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_tabs" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_throwing_strings" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_semicolons" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_whitespace" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_unnecessary_double_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_unnecessary_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "non_empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prefer_english_operator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "space_operators" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "spacing_after_comma" : {
-        "active" : 1,
-        "flagValue" : -1
-      }
-    },
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
@@ -1743,6 +1683,9 @@
       "prefer-numeric-literals" : {
         "active" : 0
       },
+      "prefer-object-has-own" : {
+        "active" : 0
+      },
       "prefer-object-spread" : {
         "active" : 0
       },
@@ -1775,7 +1718,8 @@
         "optionString" : "'always'"
       },
       "require-atomic-updates" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowProperties': false}"
       },
       "require-await" : {
         "active" : 0
@@ -1911,7 +1855,6 @@
       "minifierStyle" : 0,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
       "transpilerStyle" : 1
     },
     "languageDefaultsCSS" : {

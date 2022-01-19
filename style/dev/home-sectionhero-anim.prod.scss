@@ -47,20 +47,36 @@
     transition: all 5s cubic-bezier(0.000, 0.975, 0.265, 1.000);
 }
 .home-bgline-col{
-    transform-origin: bottom;
-    @for $i from 1 to 25 {
+
+
+
+    
+    @for $i from 1 to 12 {
         &:nth-child(#{$i}) { 
-            transition-delay: (0.15s * $i);
+            transition-delay: (0.15s * (12 - $i));
         }
     }
+    @for $a from 12 to 24 {
+        &:nth-child(#{$a}) { 
+            transition-delay: (0.15s * ($a - 12));
+        }
+    }
+
+
+
+
     background-color: rgba(255, 255, 255, 0.1);
     //transform: scaleY(0);
 }
 .home-bgline-row{
-    transform-origin: left;
-    @for $i from 1 to 25 {
+    @for $i from 1 to 12 {
         &:nth-child(#{$i}) { 
-            transition-delay: (0.15s *  (25 - $i));
+            transition-delay: (0.15s * (12 - $i));
+        }
+    }
+    @for $a from 12 to 24 {
+        &:nth-child(#{$a}) { 
+            transition-delay: (0.15s * ($a - 12));
         }
     }
     background-color: rgba(255, 255, 255, 0.1);

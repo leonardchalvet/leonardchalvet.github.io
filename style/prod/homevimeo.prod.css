@@ -1,0 +1,7 @@
+.home-sectionfeatures .home-sectionFeatures_video {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.home-sectionfeatures.style-show .home-sectionFeatures_video {
+  opacity: 1;
+}
