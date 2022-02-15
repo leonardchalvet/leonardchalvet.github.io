@@ -11,28 +11,28 @@ var animationData = {
       "id": "image_0",
       "w": 280,
       "h": 180,
-      "u": "https://www.agence-me.com/Clients/Numeral/assets/images/",
+      "u": "https://leonardchalvet.github.io/assets/images/",
       "p": "img_0.png",
       "e": 0
   }, {
       "id": "image_1",
       "w": 180,
       "h": 120,
-      "u": "https://www.agence-me.com/Clients/Numeral/assets/images/",
+      "u": "https://leonardchalvet.github.io/assets/images/",
       "p": "img_1.png",
       "e": 0
   }, {
       "id": "image_2",
       "w": 360,
       "h": 220,
-      "u": "https://www.agence-me.com/Clients/Numeral/assets/images/",
+      "u": "https://leonardchalvet.github.io/assets/images/",
       "p": "img_2.png",
       "e": 0
   }, {
       "id": "image_3",
       "w": 650,
       "h": 440,
-      "u": "https://www.agence-me.com/Clients/Numeral/assets/images/",
+      "u": "https://leonardchalvet.github.io/assets/images/",
       "p": "img_3.png",
       "e": 0
   }],

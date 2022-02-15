@@ -10,7 +10,7 @@ if(elHomeCover){
         elHomeFeatures.classList.add('style-ready');
     });
     var params = {
-        container: document.getElementById('lottie'),
+        container: document.getElementById('lotti'),
         renderer: 'canvas',
         loop: false,
         autoplay: false,
