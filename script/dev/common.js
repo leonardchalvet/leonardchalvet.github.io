@@ -7,3 +7,6 @@
 
 /* FAQ */
 // @codekit-prepend 'faq.js';
+
+/* ABOUT */
+// @codekit-prepend 'about.js';

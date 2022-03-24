@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
+    "\/.vscode\/settings.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/.vscode\/settings-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/.vscode\/sftp.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -166,6 +174,17 @@
       "oAP" : "\/home.html",
       "oF" : 0
     },
+    "\/script\/dev\/about.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/script\/dev\/about-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/script\/dev\/common.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -253,6 +272,21 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/style\/dev\/about.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/style\/dev\/about.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/style\/dev\/button.scss" : {
       "aP" : 0,
