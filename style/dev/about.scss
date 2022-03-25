@@ -13,3 +13,33 @@
         -webkit-overflow-scrolling: touch;
     }
 }
+
+.aboutv2-sectionfaq_el{
+    .aboutv2-sectionfaq_eltext{
+        display: none;
+    }
+    .aboutv2-sectionfaq_elcross{
+        
+        .aboutv2-sectionfaq_elcrossline{
+            transition: transform 0.25s ease;
+        }
+    }
+    &.style-open{
+        .aboutv2-sectionfaq_elcross{
+            .aboutv2-sectionfaq_elcrossline2{
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+        }
+        .aboutv2-sectionfaq_eltext{
+            display: block;
+        }
+    }
+}
+
+.aboutv2-sectionjob_dropdownli{
+    &.style-active{
+        .aboutv2-sectionjob_checkbox{
+            background-color: #2D4AB8;
+        }
+    }
+}

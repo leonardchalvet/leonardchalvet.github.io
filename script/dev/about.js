@@ -31,5 +31,34 @@ if( document.querySelector('.aboutv2-sectionprocess') ) {
         })
     }
 
+    let faqEl = document.querySelectorAll('.aboutv2-sectionfaq_el');
+    faqEl.forEach(function (el, index) {
+        
+        el.addEventListener('click', function (event) {
+            if(el.classList.contains('style-open')){
+                faqEl.forEach(function (el) {
+                    el.classList.remove('style-open');
+                })
+            } else {
+                faqEl.forEach(function (el) {
+                    el.classList.remove('style-open');
+                })
+                el.classList.add('style-open');
+            }
+        });
+    });
+
+
+    let filterDropdownEl = document.querySelectorAll('.aboutv2-sectionjob_dropdownli');
+    filterDropdownEl.forEach(function (el, index) {
+        
+        el.addEventListener('click', function (event) {
+            if(el.classList.contains('style-active')){
+                el.classList.remove('style-active');
+            } else {
+                el.classList.add('style-active');   
+            }
+        });
+    });
     
 }
