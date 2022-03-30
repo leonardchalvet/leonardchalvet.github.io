@@ -242,7 +242,81 @@
         <div class="aboutv2-sectionoffice_card2"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="aboutv2-sectionoffice_cardimg"></div>
         <div class="aboutv2-sectionoffice_card3"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="aboutv2-sectionoffice_cardimg"></div>
         <div class="aboutv2-sectionoffice_card4">
-          <div data-enable-touch="true" data-enable-scroll="true" data-widget-style="roadmap" data-widget-zoom="12" data-widget-latlng="" data-widget-tooltip="" title="" class="aboutv2-sectionoffice_cardmap w-widget w-widget-map"></div>
+          <div id="mapbox" style="width:100%;height:100%;border-radius:12px;"></div>
+          <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+          <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibnVtZXJhbCIsImEiOiJja3lqeHVyN3YycXFxMnZuMDY2cXE0Mm0yIn0.38Y8NUB_Xx46fL6sYNIcXw';
+            let coord = [ 2.347584934366087, 48.875413625685376 ];
+
+            let map = new mapboxgl.Map({
+              container: 'mapbox',
+              style: 'mapbox://styles/numeral/ckyjzzcxn6j5g14pptymy9vbw',
+              center: coord,
+              zoom: 16
+            });
+
+            map.on('style.load', function (e) {
+              map.addSource('markers', {
+                "type": "geojson",
+                "data": {
+                  "type": "FeatureCollection",
+                  "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": coord
+                    },
+                    "properties": {
+                      "modelId": 1,
+                    },
+                  }, {
+                    "type": "Feature",
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": coord
+                    },
+                    "properties": {
+                      "modelId": 2,
+                    },
+                  }]
+                }
+              });
+              map.addLayer({
+                "id": "circles1",
+                "source": "markers",
+                "type": "circle",
+                "paint": {
+                  "circle-radius": 12,
+                  "circle-color": "#3B61F4",
+                  "circle-opacity": 1,
+                  "circle-stroke-width": 0,
+                },
+                "filter": ["==", "modelId", 1],
+              });
+              map.addLayer({
+                "id": "circles2",
+                "source": "markers",
+                "type": "circle",
+                "paint": {
+                  "circle-radius": 25,
+                  "circle-color": "#9FB3FF",
+                  "circle-opacity": 0.2,
+                  "circle-stroke-width": 0,
+                },
+                "filter": ["==", "modelId", 2],
+              });
+            });
+            map.addControl(new mapboxgl.NavigationControl());
+            map.scrollZoom.disable();
+
+            new mapboxgl.Popup({ offset: [90, -70] }).setLngLat(coord)
+              .setHTML(
+                '<div style="padding:15px 18px;border-radius:4px;background: #FFFFFF;box-shadow: 0px 8.99299px 25.1804px rgba(0, 0, 0, 0.08);display:flex;">' +
+                '<svg width="40" height="40" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.08984 8.41895C9.26873 8.41895 9.44028 8.49001 9.56677 8.61649C9.69326 8.74298 9.76432 8.91454 9.76432 9.09342" stroke="#444549" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.41797 9.09342C8.41797 8.91454 8.48903 8.74298 8.61552 8.61649C8.74201 8.49001 8.91356 8.41895 9.09244 8.41895" stroke="#444549" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.09244 9.77018C8.91356 9.77018 8.74201 9.69912 8.61552 9.57263C8.48903 9.44614 8.41797 9.27458 8.41797 9.0957" stroke="#444549" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.76432 9.09375C9.76432 9.27263 9.69326 9.44419 9.56677 9.57067C9.44028 9.69716 9.26873 9.76822 9.08984 9.76822" stroke="#444549" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.09369 1C11.2403 1 13.2989 1.85272 14.8168 3.37059C16.3346 4.88845 17.1874 6.94711 17.1874 9.09369C17.1874 12.5488 12.3527 19.1227 10.1567 21.9321C10.0305 22.0936 9.8692 22.2242 9.68501 22.314C9.50083 22.4038 9.29861 22.4505 9.09369 22.4505C8.88877 22.4505 8.68654 22.4038 8.50236 22.314C8.31818 22.2242 8.15688 22.0936 8.03072 21.9321C5.83463 19.1227 1 12.5488 1 9.09369C1 6.94711 1.85273 4.88845 3.37059 3.37059C4.88845 1.85272 6.94711 1 9.09369 1Z" stroke="#444549" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+                '<p style="margin-left:16px;font-family: Inter, sans-serif;font-size: 14px;line-height: 27px; color: #444549;">9, rue Ambroise Thomas 75009 Paris, France</p>' +
+                '</div>'
+              ).addTo(map);
+          </script>
         </div>
         <div class="aboutv2-sectionoffice_card5 color-blue-8-bg">
           <div class="aboutv2-sectionoffice_cardcontent">
@@ -349,67 +423,7 @@
       </div>
     </div>
   </div>
-  <div class="aboutv2-sectionjob wf-section">
-    <div class="wrapper">
-      <div class="aboutv2-sectionjob_containertitle">
-        <h2 class="h2 color-primary-3 aboutv2-sectionjob_title">Open Positions</h2>
-        <p class="paragraph-big color-greyscale-5">Tellus lobortis nunc facilisis vitae non diam sit vitae laoreet sagittis turpis sit pharetra sed</p>
-      </div>
-      <div class="aboutv2-sectionjob_head">
-        <div data-hover="false" data-delay="0" class="dropdown w-dropdown">
-          <div class="dropdown-toggle w-dropdown-toggle">
-            <div class="icon w-icon-dropdown-toggle"></div>
-            <div class="paragraph-small color-primary-3">All departments</div>
-          </div>
-          <nav class="aboutv2-sectionjob_dropdown w-dropdown-list">
-            <div class="w-dyn-list">
-              <div role="list" class="aboutv2-sectionjob_dropdownli w-dyn-items">
-                <div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item">
-                  <div class="aboutv2-sectionjob_checkbox"><img src="images/icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div>
-                  <div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle"></div>
-                </div>
-              </div>
-              <div class="w-dyn-empty">
-                <div>No items found.</div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="aboutv2-sectionjob_containerel">
-        <div class="aboutv2-sectionjob_ul w-dyn-list">
-          <div role="list" class="w-dyn-items">
-            <div role="listitem" class="aboutv2-sectionjob_li w-dyn-item">
-              <a href="#" class="aboutv2-sectionjob_licontent w-inline-block">
-                <div class="h4 color-primary-3 aboutv2-sectionjob_lititle"></div>
-                <div class="aboutv2-sectionjob_liinfos">
-                  <div class="aboutv2-sectionjob_licontainertags">
-                    <div class="aboutv2-sectionjob_litag color-blue-3-bg"><img src="images/calendar-schedule-1.1.1-1.svg" loading="lazy" alt="" class="aboutv2-sectionjob_litagimg">
-                      <div class="paragraph-tiny color-primary-3"></div>
-                    </div>
-                    <div class="aboutv2-sectionjob_litag color-blue-3-bg"><img src="images/Group.svg" loading="lazy" alt="" class="aboutv2-sectionjob_litagimg">
-                      <div class="paragraph-tiny color-primary-3"></div>
-                    </div>
-                    <div class="aboutv2-sectionjob_litag color-blue-5-bg">
-                      <div class="paragraph-tiny color-primary-3"></div>
-                    </div>
-                  </div><img src="images/Vector_1.svg" loading="lazy" alt="" class="image-6">
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="w-dyn-empty">
-            <div>No items found.</div>
-          </div>
-        </div>
-      </div>
-      <div class="aboutv2-sectionjob_containerbtn">
-        <a href="#" class="button-small color-blue-8-bg w-inline-block">
-          <div class="link-small color-primary-1">Load more</div>
-        </a>
-      </div>
-    </div>
-  </div>
+  <div class="aboutv2-sectionjob wf-section"><div class="wrapper"><div class="aboutv2-sectionjob_containertitle"><h2 class="h2 color-primary-3 aboutv2-sectionjob_title">Open Positions</h2><p class="paragraph-big color-greyscale-5">Tellus lobortis nunc facilisis vitae non diam sit vitae laoreet sagittis turpis sit pharetra sed</p></div><div class="aboutv2-sectionjob_head"><div data-hover="false" data-delay="0" class="dropdown w-dropdown" style="z-index: 901;"><div class="dropdown-toggle w-dropdown-toggle w--open" id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0" aria-haspopup="menu" aria-expanded="true" role="button" tabindex="0"><div class="icon w-icon-dropdown-toggle" aria-hidden="true"></div><div class="paragraph-small color-primary-3">All departments</div></div><nav class="aboutv2-sectionjob_dropdown w-dropdown-list w--open" id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0"><div class="w-dyn-list"><div role="list" class="aboutv2-sectionjob_dropdownli w-dyn-items"><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Others</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Operations</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Finance</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">HR</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Design</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Data</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Product</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Marketing</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Sales</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Customer Service</div></div><div role="listitem" class="aboutv2-sectionjob_dropdownlicontent w-dyn-item"><div class="aboutv2-sectionjob_checkbox"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623dc048c4590ecca3fea6f5_icn-check.svg" loading="lazy" alt="" class="aboutv2-sectionjob_checkboximg"></div><div class="paragraph-small color-primary-2 aboutv2-sectionjob_dropdownlititle">Engineering</div></div></div></div></nav></div></div><div class="aboutv2-sectionjob_containerel"><div class="aboutv2-sectionjob_ul w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="aboutv2-sectionjob_li w-dyn-item"><a href="https://www.apple.com/fr/?afid=p238%7Cs05EVyND6-dc_mtid_187079nc38483_pcrid_586533327349_pgrid_16898309484_&amp;cid=aos-fr-kwgo-brand--slid--bran-product-" target="_blank" class="aboutv2-sectionjob_licontent w-inline-block"><div class="h4 color-primary-3 aboutv2-sectionjob_lititle">DevOps Enginneer</div><div class="aboutv2-sectionjob_liinfos"><div class="aboutv2-sectionjob_licontainertags"><div class="aboutv2-sectionjob_litag color-blue-3-bg"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623b45cdc4149f652ddcc144_calendar-schedule-1.1.1%201.svg" loading="lazy" alt="" class="aboutv2-sectionjob_litagimg"><div class="paragraph-tiny color-primary-3">Option 3</div></div><div class="aboutv2-sectionjob_litag color-blue-3-bg"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623b466460fe68778161b584_Group.svg" loading="lazy" alt="" class="aboutv2-sectionjob_litagimg"><div class="paragraph-tiny color-primary-3">Paris or Remote (Europe)</div></div><div class="aboutv2-sectionjob_litag color-blue-5-bg"><div class="paragraph-tiny color-primary-3">Engineering</div></div></div><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/6225e3d461bff50f9b5a8199_Vector.svg" loading="lazy" alt="" class="image-6"></div></a></div><div role="listitem" class="aboutv2-sectionjob_li w-dyn-item"><a href="https://www.apple.com/fr/" target="_blank" class="aboutv2-sectionjob_licontent w-inline-block"><div class="h4 color-primary-3 aboutv2-sectionjob_lititle">Product Manager</div><div class="aboutv2-sectionjob_liinfos"><div class="aboutv2-sectionjob_licontainertags"><div class="aboutv2-sectionjob_litag color-blue-3-bg"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623b45cdc4149f652ddcc144_calendar-schedule-1.1.1%201.svg" loading="lazy" alt="" class="aboutv2-sectionjob_litagimg"><div class="paragraph-tiny color-primary-3">Permanent</div></div><div class="aboutv2-sectionjob_litag color-blue-3-bg"><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/623b466460fe68778161b584_Group.svg" loading="lazy" alt="" class="aboutv2-sectionjob_litagimg"><div class="paragraph-tiny color-primary-3">Paris or Remote (Europe)</div></div><div class="aboutv2-sectionjob_litag color-blue-5-bg"><div class="paragraph-tiny color-primary-3">Marketing</div></div></div><img src="https://assets.website-files.com/61ae3c50388fc29df557b8be/6225e3d461bff50f9b5a8199_Vector.svg" loading="lazy" alt="" class="image-6"></div></a></div></div></div></div><div class="aboutv2-sectionjob_containerbtn"><a href="#" class="button-small color-blue-8-bg w-inline-block"><div class="link-small color-primary-1">Load more</div></a></div></div></div>
   <div class="aboutv2-sectionprocess wf-section">
     <div class="aboutv2-sectionprocess_sticky">
       <div class="wrapper">

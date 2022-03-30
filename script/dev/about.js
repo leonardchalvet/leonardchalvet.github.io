@@ -49,14 +49,36 @@ if( document.querySelector('.aboutv2-sectionprocess') ) {
     });
 
 
-    let filterDropdownEl = document.querySelectorAll('.aboutv2-sectionjob_dropdownli');
+    let filterDropdownEl = document.querySelectorAll('.aboutv2-sectionjob_dropdownlicontent');
     filterDropdownEl.forEach(function (el, index) {
-        
         el.addEventListener('click', function (event) {
             if(el.classList.contains('style-active')){
                 el.classList.remove('style-active');
             } else {
-                el.classList.add('style-active');   
+                el.classList.add('style-active');
+            }
+
+            let nbActive = 0;
+            document.querySelectorAll('.aboutv2-sectionjob_li').forEach(function (el1, index) {
+                el1.style.display = "none"
+            });
+            document.querySelectorAll('.aboutv2-sectionjob_li').forEach(function (el1, index) {
+                let tag = $(el1).find('.aboutv2-sectionjob_litag:last-child div').text();
+                console.log(tag);
+                filterDropdownEl.forEach(function (el2, index) {
+                    if(el2.classList.contains('style-active')){
+                        nbActive++;
+                        if($(el2).text().toLowerCase() === tag.toLowerCase() ) {
+                            el1.style.display = ""
+                        }
+                    }
+                });
+            });
+
+            if(nbActive === 0) {
+                document.querySelectorAll('.aboutv2-sectionjob_li').forEach(function (el1, index) {
+                    el1.style.display = ""
+                });
             }
         });
     });

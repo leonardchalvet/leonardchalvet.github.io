@@ -1989,11 +1989,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/webflow\/images\/Téléphone.svg" : {
+    "\/webflow\/images\/Téléphone.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/webflow\/images\/Téléphone.svg",
+      "oAP" : "\/webflow\/images\/Téléphone.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -2096,7 +2096,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 660580534.37295198,
-    "displayValue" : "Numeral",
+    "displayValue" : "numeral",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-forest",
     "iconImageWasSetByUser" : 0
